@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane prefHeight="550.0" prefWidth="1180.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mthiam.gescom.controllers.DettesFournisseurController">
+   <top>
+      <ToolBar prefHeight="60.0" prefWidth="200.0" styleClass="font-color" BorderPane.alignment="CENTER">
+         <items>
+            <Label styleClass="text-title-white" text="LISTE DES DETTES FOURNISSEUR" />
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <BorderPane prefHeight="490.0" prefWidth="1180.0" BorderPane.alignment="CENTER">
+         <center>
+            <TableView fx:id="tableCreances" prefHeight="363.0" prefWidth="1002.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="num_br_column" prefWidth="150.0" resizable="false" sortable="false" text="N° Entrée" />
+                <TableColumn fx:id="date_column" prefWidth="191.6666259765625" resizable="false" sortable="false" text="Date" />
+                  <TableColumn fx:id="fournisseur_column" prefWidth="196.6666259765625" resizable="false" sortable="false" text="Fournisseur" />
+                  <TableColumn fx:id="num_facture_column" prefWidth="183.99993896484375" resizable="false" sortable="false" text="N° Facture" />
+                  <TableColumn fx:id="montant_total_column" prefWidth="147.0" resizable="false" sortable="false" text="Montant total" />
+                  <TableColumn fx:id="montant_restant_column" prefWidth="141.33331298828125" resizable="false" sortable="false" text="Restant" />
+                  <TableColumn fx:id="paiement_column" minWidth="0.0" prefWidth="86.66668701171875" resizable="false" sortable="false" text="Paiement" />
+                  <TableColumn fx:id="details_column" minWidth="0.0" prefWidth="83.0" resizable="false" sortable="false" text="Détails" />
+              </columns>
+            </TableView>
+         </center>
+         <top>
+            <Pane prefHeight="72.0" prefWidth="1180.0" styleClass="pane" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="62.0" layoutY="-18.0" prefHeight="39.0" prefWidth="156.0" styleClass="label-sur-pane" text="RECHERCHE">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="31.0" layoutY="24.0" prefHeight="42.0" prefWidth="1134.0">
+                     <children>
+                        <Label layoutX="427.0" layoutY="23.0" text="Statut">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox fx:id="statut_Cbx" prefHeight="25.0" prefWidth="169.0">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <Label layoutX="10.0" layoutY="23.0" text="Fournisseur">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fournisseur_Tfd" onKeyReleased="#filterByFournisseur">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label layoutX="503.0" layoutY="23.0" text="N° Facture">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="facture_Tfd" layoutX="555.0" layoutY="13.0" onKeyReleased="#filterByFacture">
+                           <HBox.margin>
+                              <Insets right="40.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>

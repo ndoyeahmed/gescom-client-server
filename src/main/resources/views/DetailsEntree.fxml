@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mthiam.gescom.controllers.DetailsEntreeController">
+   <top>
+      <ToolBar prefHeight="60.0" prefWidth="200.0" styleClass="font-color" BorderPane.alignment="CENTER">
+         <items>
+            <Label fx:id="title_Lbl" styleClass="text-title-white" text="Détails entrée" />
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <TableView fx:id="tableLigne" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="code_column" editable="false" prefWidth="121.66665649414062" resizable="false" text="Code" />
+          <TableColumn fx:id="reference_column" editable="false" prefWidth="146.33331298828125" resizable="false" text="Référence" />
+            <TableColumn fx:id="designation_column" editable="false" prefWidth="197.66668701171875" resizable="false" text="Désignation" />
+            <TableColumn fx:id="qte_column" editable="false" prefWidth="81.33331298828125" resizable="false" text="Quantité" />
+            <TableColumn fx:id="parix_achat_column" editable="false" prefWidth="122.33331298828125" resizable="false" text="Prix d'achat" />
+            <TableColumn fx:id="montant_column" editable="false" prefWidth="127.0" resizable="false" text="Montant" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

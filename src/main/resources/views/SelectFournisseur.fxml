@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane prefHeight="400.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mthiam.gescom.controllers.SelectFournisseurController">
+   <center>
+      <AnchorPane prefHeight="340.0" prefWidth="800.0">
+         <children>
+            <Pane layoutX="18.0" layoutY="24.0" prefHeight="301.0" prefWidth="344.0" styleClass="pane">
+               <children>
+                  <GridPane layoutX="12.0" layoutY="31.0" prefHeight="198.0" prefWidth="321.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.33331298828125" minWidth="10.0" prefWidth="99.33334350585938" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.33331298828125" minWidth="10.0" prefWidth="255.66665649414062" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Code" />
+                        <TextField fx:id="code_Tfd" editable="false" GridPane.columnIndex="1" />
+                        <Label layoutX="10.0" layoutY="24.0" text="Nom" GridPane.rowIndex="1" />
+                        <TextField fx:id="nom_Tfd" layoutX="146.0" layoutY="18.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label layoutX="10.0" layoutY="69.0" text="Adresse" GridPane.rowIndex="2" />
+                        <TextField fx:id="adresse_Tfd" layoutX="146.0" layoutY="63.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label layoutX="10.0" layoutY="114.0" text="N° téléphone" GridPane.rowIndex="3" />
+                        <TextField fx:id="telephone_Tfd" layoutX="146.0" layoutY="107.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                     </children>
+                  </GridPane>
+                  <Button fx:id="save_Btn" layoutX="126.0" layoutY="244.0" mnemonicParsing="false" onAction="#addNewFournisseur" prefHeight="30.0" prefWidth="111.0" styleClass="content-area-circle-btns" text="Enregistrer" />
+               </children>
+            </Pane>
+            <TableView fx:id="tableFournisseur" layoutX="378.0" layoutY="77.0" prefHeight="248.0" prefWidth="408.0">
+              <columns>
+                <TableColumn fx:id="nom_column" prefWidth="211.0" text="Nom" />
+                <TableColumn fx:id="telephone_column" minWidth="0.0" prefWidth="204.0" text="N° téléphone" />
+              </columns>
+            </TableView>
+            <Pane layoutX="378.0" layoutY="14.0" prefHeight="57.0" prefWidth="409.0" styleClass="pane">
+               <children>
+                  <Label layoutX="156.0" layoutY="-18.0" styleClass="label-sur-pane" text="Recherche" />
+                  <TextField fx:id="filter_Tfd" layoutX="25.0" layoutY="14.0" onKeyReleased="#filterFournisseur" prefHeight="30.0" prefWidth="360.0" promptText="Nom fournisseur, N° téléphone ou Adresse" />
+               </children>
+            </Pane>
+            <Label layoutX="97.0" layoutY="6.0" styleClass="label-sur-pane" text="Nouveau fournisseur" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <ToolBar prefHeight="60.0" prefWidth="200.0" styleClass="font-color" BorderPane.alignment="CENTER">
+         <items>
+            <Label styleClass="text-title-white" text="Liste des fournisseurs" />
+         </items>
+      </ToolBar>
+   </top>
+</BorderPane>

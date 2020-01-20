@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="VBox" alignment="TOP_CENTER" prefHeight="288.0" prefWidth="480.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mthiam.gescom.controllers.PaiementDetteController">
+    <children>
+      <ToolBar prefHeight="67.0" prefWidth="480.0">
+         <items>
+              <Label styleClass="text-title-black" text="Paiement dette fournisseur" textFill="#009c3a">
+                  <font>
+                      <Font name="System Bold Italic" size="20.0" />
+                  </font>
+              </Label>
+         </items>
+         <VBox.margin>
+            <Insets bottom="30.0" />
+         </VBox.margin>
+      </ToolBar>
+        <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="263.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box">
+            <children>
+            <TextField fx:id="numero_paiement" prefHeight="30.0" prefWidth="424.0">
+               <HBox.margin>
+                  <Insets right="6.0" />
+               </HBox.margin>
+            </TextField>
+            </children>
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="15.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="345.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box">
+            <children>
+            <TextField fx:id="somme_paiement" prefHeight="30.0" prefWidth="430.0">
+               <HBox.margin>
+                  <Insets right="6.0" />
+               </HBox.margin>
+            </TextField>
+                <FontAwesomeIcon glyphStyleClass="glyph-color" iconName="MONEY" size="1.5em" />
+            </children>
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="15.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="10.0" layoutY="285.0" prefHeight="45.0" prefWidth="200.0">
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="15.0" />
+            </VBox.margin>
+            <children>
+                <JFXButton onAction="#handleSave" prefHeight="30.0" prefWidth="120.0" ripplerFill="WHITE" styleClass="content-area-circle-btns" text="Enregistrer" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </JFXButton>
+            <JFXButton layoutX="340.0" layoutY="17.0" onAction="#closePopup" prefHeight="30.0" prefWidth="120.0" ripplerFill="WHITE" styleClass="content-area-circle-btns" text="Annuler" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </JFXButton>
+            </children>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mthiam.gescom.controllers.SplashScreenController">
+   <children>
+      <Pane prefHeight="295.0" prefWidth="570.0" styleClass="font-color">
+         <children>
+            <Line endX="462.0" layoutX="104.0" layoutY="250.0" startX="-100.0" stroke="GREY" strokeWidth="5.0" />
+            <Line endX="190.0" layoutX="10.0" layoutY="148.0" rotate="-90.3" startX="-101.0" stroke="GREY" strokeWidth="5.0" />
+            <Label layoutX="389.0" layoutY="261.0" styleClass="label-file" text="Ges'Com Logiciel ©2019" textFill="GREY">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="progress" layoutX="369.0" layoutY="225.0" prefHeight="20.0" prefWidth="115.0" text="Chargement..." textFill="GREY">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="progressBar" layoutX="363.0" layoutY="193.0" prefWidth="200.0" progress="0.0" />
+            <Label fx:id="entreprise_name_Lbl" alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="148.0" prefHeight="34.0" prefWidth="512.0" styleClass="text-title-white" text="LOGICIEL GESTION COMMERCIALE" textFill="#0747a6">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="process_TextView" layoutX="58.0" layoutY="225.0" prefHeight="20.0" prefWidth="294.0" textFill="GREY">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <ImageView fx:id="logo_Img" fitHeight="142.0" fitWidth="172.0" layoutX="228.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/defaultLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</Pane>

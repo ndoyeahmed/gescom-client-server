@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="550.0" prefWidth="1180.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mthiam.gescom.controllers.MesFacturesController">
+   <top>
+      <ToolBar prefHeight="60.0" prefWidth="200.0" styleClass="font-color" BorderPane.alignment="CENTER">
+         <items>
+            <Label styleClass="text-title-white" text="MES FACTURES" />
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <BorderPane prefHeight="490.0" prefWidth="1180.0" BorderPane.alignment="CENTER">
+         <center>
+            <TableView fx:id="tableFactures" prefHeight="363.0" prefWidth="1002.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="num_facture_column" prefWidth="176.0" resizable="false" sortable="false" text="N° Facture" />
+                <TableColumn fx:id="date_column" prefWidth="161.3333740234375" resizable="false" sortable="false" text="Date" />
+                  <TableColumn fx:id="client_column" prefWidth="224.3333740234375" resizable="false" sortable="false" text="Client" />
+                  <TableColumn fx:id="montant_total_column" prefWidth="176.6666259765625" resizable="false" sortable="false" text="Montant total" />
+                  <TableColumn fx:id="montant_verse_column" prefWidth="195.66668701171875" resizable="false" sortable="false" text="Montant versé" />
+                  <TableColumn fx:id="montant_restant_column" prefWidth="169.3333740234375" resizable="false" sortable="false" text="Montant restant" />
+                  <TableColumn fx:id="print_column" minWidth="0.0" prefWidth="76.66656494140625" resizable="false" sortable="false" text="Imprimer" />
+              </columns>
+            </TableView>
+         </center>
+         <top>
+            <Pane prefHeight="72.0" prefWidth="1180.0" styleClass="pane" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="62.0" layoutY="-18.0" prefHeight="39.0" prefWidth="156.0" styleClass="label-sur-pane" text="RECHERCHE">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="31.0" layoutY="24.0" prefHeight="42.0" prefWidth="1134.0">
+                     <children>
+                        <Label layoutX="10.0" layoutY="23.0" text="Type facture">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="typeFacture_Cbx" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <Label text="Date">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="date_Dpk" editable="false">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                        <Label layoutX="427.0" layoutY="23.0" text="Client">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fournisseur_Tfd" onKeyReleased="#filterByFournisseur" prefHeight="25.0" prefWidth="212.0">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>

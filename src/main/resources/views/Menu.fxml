@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ToolBar fx:id="toolbar" prefHeight="90.0" prefWidth="1180.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mthiam.gescom.controllers.MenuController">
+   <items>
+      <TabPane prefHeight="90.0" prefWidth="984.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="STOCK">
+            <content>
+                  <HBox alignment="CENTER_LEFT" prefWidth="800.0">
+                     <children>
+                        <JFXButton fx:id="home_Btn" contentDisplay="TOP" prefHeight="60.0" prefWidth="100.0" text="Accueil">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/homeIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin></JFXButton>
+                        <HBox prefHeight="61.0" prefWidth="484.0">
+                           <children>
+                              <JFXButton fx:id="stock_Btn" contentDisplay="TOP" prefHeight="60.0" prefWidth="100.0" text="Stock">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/stockIcon.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="stockAlerte_Btn" contentDisplay="TOP" prefHeight="60.0" prefWidth="133.0" text="Stock en alerte">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/alerticon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="inventaire_Btn" contentDisplay="TOP" prefHeight="60.0" prefWidth="100.0" text="Inventaire" visible="false">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/inventoryIcon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding></HBox>
+            </content>
+          </Tab>
+          <Tab text="GESTION DES ENTREES">
+            <content>
+                  <HBox prefWidth="800.0">
+                     <children>
+                        <JFXButton fx:id="nouvelleEntree_Btn" contentDisplay="TOP" prefHeight="60.0" prefWidth="112.0" text="Nouvelle entrée">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/téléchargement.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="historiqueEntrees_Btn" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="161.0" text="Historique des entrées">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/calendar-512.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="liste_fournis_Btn" contentDisplay="TOP" layoutX="137.0" layoutY="10.0" prefHeight="60.0" prefWidth="161.0" text="Liste fournisseurs">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/fournisseurIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children></HBox>
+            </content>
+          </Tab>
+            <Tab text="GESTION DES VENTES">
+               <content>
+                  <HBox prefWidth="800.0">
+                     <children>
+                        <JFXButton fx:id="nouvelleVente_Btn" contentDisplay="TOP" prefHeight="60.0" prefWidth="112.0" text="Nouvelle vente">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/téléchargement.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="historiqueVentes_Btn" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="161.0" text="Historique des ventes">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/calendar-512.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="liste_clients_Btn" contentDisplay="TOP" layoutX="137.0" layoutY="10.0" prefHeight="60.0" prefWidth="161.0" text="Liste clients">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/clientsIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </content>
+            </Tab>
+            <Tab fx:id="caisse_rubrique" text="CAISSE">
+               <content>
+                  <HBox prefWidth="800.0">
+                     <children>
+                        <JFXButton fx:id="nouvelles_factures_Btn" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="210.0" text="Liste des ventes en cours">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/factureIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="mes_factures_Btn" contentDisplay="TOP" layoutX="137.0" layoutY="10.0" prefHeight="60.0" prefWidth="161.0" text="Mes factures">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/facturesIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="creance_Btn" contentDisplay="TOP" layoutX="313.0" layoutY="10.0" prefHeight="60.0" prefWidth="133.0" text="Créances">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/money.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="creance_fournis_Btn" contentDisplay="TOP" prefHeight="60.0" prefWidth="161.0" text="Dette founisseur">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/detteIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="ma_caisse_Btn" contentDisplay="TOP" layoutX="235.0" layoutY="10.0" prefHeight="60.0" prefWidth="161.0" text="Ma caisse">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/caisseIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </content>
+            </Tab>
+            <Tab fx:id="parametrage_rubrique" text="PARAMETRES">
+                <content>
+                  <HBox prefWidth="800.0">
+                     <children>
+                        <JFXButton fx:id="gesUtilisateurs_Btn" contentDisplay="TOP" prefHeight="60.0" prefWidth="120.0" text="Utilisateurs">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/usersIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="gesCategorie_Btn" contentDisplay="TOP" layoutX="30.0" layoutY="10.0" prefHeight="60.0" prefWidth="127.0" text="Famille articles">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/familleProduit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="entrepriseInfo_Btn" contentDisplay="TOP" layoutX="130.0" layoutY="10.0" prefHeight="60.0" prefWidth="127.0" text="Ma structure">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/entrepriseIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding></HBox>
+                </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <VBox alignment="TOP_CENTER" prefHeight="90.0" prefWidth="176.0">
+         <children>
+            <JFXButton fx:id="deconnexion_Btn" contentDisplay="TOP" prefHeight="60.0" prefWidth="119.0" text="Deconnexion">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/disconnectIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="monCompteBtn" prefHeight="30.0" prefWidth="174.0" styleClass="content-area-circle-btns" text="Changer mot de passe" />
+         </children>
+      </VBox>
+   </items>
+</ToolBar>

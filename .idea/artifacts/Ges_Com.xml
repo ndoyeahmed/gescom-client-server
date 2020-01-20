@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Ges'Com">
+    <output-path>$PROJECT_DIR$/out/artifacts/Ges_Com</output-path>
+    <root id="root">
+      <element id="archive" name="Ges_Com.jar">
+        <element id="module-output" name="Ges'Com" />
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,50 @@
+package com.mthiam.gescom.config;
+
+public abstract class Rooting {
+
+    public static String PARAMETRAGE_VIEW = "/views/ParametrageAppView.fxml";
+    public static String SPLASHVIEW = "/views/SplashScreen.fxml";
+    public static String SIGNUPADMINVIEW = "/views/SignUpAdmin.fxml";
+    public static String SIGNIN = "/views/SignIn.fxml";
+    public static String RESETPASSWORD = "/views/ResetPassword.fxml";
+    public static String ADMINMENU = "/views/AdminMenu.fxml";
+    public static String MENU = "/views/Menu.fxml";
+    public static String SIGNINSUPERADMIN = "/views/SignInSuperAdmin.fxml";
+    public static String GESUTILISATEURS= "/views/GesUsers.fxml";
+    public static String ADDUTILISATEURS= "/views/addUser.fxml";
+    public static String EDITUTILISATEURS= "/views/editUser.fxml";
+    public static String GESCATEGORIE= "/views/GesCategorie.fxml";
+    public static String ADDCATEGORIE= "/views/addCategorie.fxml";
+    public static String EDITCATEGORIE= "/views/editCategorie.fxml";
+    public static String EDITPARAMETRAGEAPP= "/views/editParametrageApp.fxml";
+    public static String GESSTOCK= "/views/GesStock.fxml";
+    public static String EDITARTICLE= "/views/editArticle.fxml";
+    public static String FINSTOCKARTICLE= "/views/ArticleFinStock.fxml";
+    public static String NOUVELLEENTREE= "/views/NouvelleEntree.fxml";
+    public static String SELECTFOURNISSEUR= "/views/SelectFournisseur.fxml";
+    public static String ENTREESTOCK= "/views/EntreeStock.fxml";
+    public static String SORTIESTOCK= "/views/SortieStock.fxml";
+    public static String ADDARTICLE= "/views/AddArticle.fxml";
+    public static String LISTEENTREE= "/views/ListeEntrees.fxml";
+    public static String DETAILSENTREE= "/views/DetailsEntree.fxml";
+    public static String DETTEFOURNISSEUR = "/views/DetteFournisseurs.fxml";
+    public static String DASHBORD= "/views/Dashboard.fxml";
+    public static String NOUVELLEVENTE= "/views/NouvelleVente.fxml";
+    public static String SELECTCLIENT= "/views/SelectClient.fxml";
+    public static String LISTEVENTE= "/views/ListeVentes.fxml";
+    public static String DETAILSVENTE= "/views/DetailsVente.fxml";
+    public static String PAIEMENTFOURNISSEUR= "/views/PaiementDetteFournisseur.fxml";
+    public static String DETAILSPAIEMENTDETTE= "/views/DetailsPaiementDette.fxml";
+    public static String CREANCECLIENT= "/views/CreanceClient.fxml";
+    public static String PAIEMENTCREANCECLIENT= "/views/PaiementCreanceClient.fxml";
+    public static String DETAILSPAIEMENTCREANCE= "/views/DetailsPaiementCreance.fxml";
+    public static String CHANGEPASSWORD= "/views/changePassword.fxml";
+    public static String GESCLIENTS= "/views/GesClients.fxml";
+    public static String EDITCLIENT= "/views/editClient.fxml";
+    public static String GESFOURNISSEURS= "/views/GesFournisseurs.fxml";
+    public static String EDITFOURNISSEUR= "/views/editFournisseur.fxml";
+    public static String RESETBYSUPERADMIN= "/views/ResetUsersBySuperAdmin.fxml";
+    public static String VENTEENCOURS= "/views/ListeVentesEnCours.fxml";
+    public static String DETAILSVENTEENCOURS= "/views/DetailsVenteEnCours.fxml";
+    public static String MESFACTURES= "/views/MesFactures.fxml";
+}

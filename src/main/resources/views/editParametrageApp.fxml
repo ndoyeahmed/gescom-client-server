@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="550.0" prefWidth="1180.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mthiam.gescom.controllers.EditParametrageApp">
+   <top>
+      <ToolBar fx:id="toolBar" prefHeight="50.0" prefWidth="1180.0" styleClass="font-color" BorderPane.alignment="CENTER">
+         <items>
+            <Label styleClass="text-title-white" text="Gestion des informations de mon entreprise" />
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <VBox prefHeight="470.0" prefWidth="1180.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="411.0" prefWidth="1180.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="401.0" prefWidth="815.0">
+                     <children>
+                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="124.0" prefWidth="977.0">
+                           <children>
+                              <Label text="Nom de la l'entreprise (*)">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="entreprise_name_Tfd" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="648.0">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </TextField>
+                              <Label text="Adresse (*)">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="adresse_Tfd" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="648.0">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="900.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <Label text="Téléphone fixe">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="tel_fixe_Tfd" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="287.0">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </TextField>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="38.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <Label text="Téléphone mobile (*)">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="tel_mobile_Tfd" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="287.0">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </TextField>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="38.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="75.0" layoutY="134.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="900.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <Label text="Adresse email">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="email_Tfd" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="287.0">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </TextField>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="38.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <Label text="Site web">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="website_Tfd" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="287.0">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </TextField>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="38.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="75.0" layoutY="196.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <Label text="NINEA">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="ninea_Tfd" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="287.0">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </TextField>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="38.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <Label text="Registre de commerce">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="rc_Tfd" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="287.0">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </TextField>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="38.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="60.0" layoutY="274.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="651.0">
+                                 <children>
+                                    <Label text="Dossier de l'application(*)">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <HBox prefHeight="30.0" prefWidth="650.0">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Label fx:id="path_directory_Lbl" prefHeight="30.0" prefWidth="469.0" styleClass="label-file" />
+                                          <Button fx:id="setDirectoryBtn" mnemonicParsing="false" onAction="#setDirectory" prefHeight="30.0" prefWidth="100.0" styleClass="content-area-circle-btns" text="Parcourrir">
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="50.0" right="50.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="428.0" prefWidth="660.0">
+                     <children>
+                        <ImageView fx:id="logo_Img" fitHeight="195.0" fitWidth="283.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button fx:id="setLogoBtn" mnemonicParsing="false" onAction="#setLogo" prefHeight="30.0" prefWidth="100.0" styleClass="content-area-circle-btns" text="Parcourrir" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="67.0" prefWidth="1180.0">
+               <children>
+                  <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#handleSave" prefHeight="30.0" prefWidth="147.0" styleClass="content-area-circle-btns" text="ENREGISTRER" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

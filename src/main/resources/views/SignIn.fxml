@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="VBox" alignment="CENTER" prefHeight="399.0" prefWidth="335.0" styleClass="white-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mthiam.gescom.controllers.SignInController">
+   <children>
+      <ImageView fx:id="logo_Img" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="319.0" styleClass="text-title-black" text="Connexion" textFill="#009c3a">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="20.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <TextField fx:id="username_Tfd" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onKeyReleased="#se_Connecter_By_Enter" promptText="Nom d'utilisateur" styleClass="tf" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <FontAwesomeIcon glyphStyleClass="glyph-color" iconName="USER" size="1.5em" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="263.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box">
+         <children>
+            <PasswordField fx:id="password_Pfd" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onKeyReleased="#se_Connecter_By_Enter" prefHeight="44.0" prefWidth="436.0" promptText="Mot de passe" styleClass="tf">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </PasswordField>
+            <FontAwesomeIcon glyphStyleClass="glyph-color" iconName="LOCK" size="1.5em" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox alignment="TOP_CENTER">
+         <children>
+            <Button fx:id="connexion_Btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#se_Connecter" prefHeight="30.0" prefWidth="120.0" styleClass="content-area-circle-btns" text="Connexion" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+         </children>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

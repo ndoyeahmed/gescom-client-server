@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/gest_stock?serverTimezone=UTC</property>
+        <property name="hibernate.connection.username">mouhamed</property>
+        <property name="hibernate.connection.password">passer@123</property>
+        <property name="hibernate.connection.pool_size">1</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="show_sql">true</property>
+
+<!--        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>-->
+        <!-- DB schema will be updated if needed -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- Mapping Models java to DB entities -->
+        <mapping class="com.mthiam.gescom.models.Role"/>
+        <mapping class="com.mthiam.gescom.models.Utilisateur"/>
+        <mapping class="com.mthiam.gescom.models.Categorie"/>
+        <mapping class="com.mthiam.gescom.models.Article"/>
+        <mapping class="com.mthiam.gescom.models.Stock"/>
+        <mapping class="com.mthiam.gescom.models.Fournisseur"/>
+        <mapping class="com.mthiam.gescom.models.Entree"/>
+        <mapping class="com.mthiam.gescom.models.LigneEntree"/>
+        <mapping class="com.mthiam.gescom.models.DetteFournisseur"/>
+        <mapping class="com.mthiam.gescom.models.Client"/>
+        <mapping class="com.mthiam.gescom.models.Vente"/>
+        <mapping class="com.mthiam.gescom.models.LigneVente"/>
+        <mapping class="com.mthiam.gescom.models.CreanceClient"/>
+        <mapping class="com.mthiam.gescom.models.Configuration"/>
+        <mapping class="com.mthiam.gescom.models.VersementDette"/>
+        <mapping class="com.mthiam.gescom.models.VersementCreance"/>
+
+
+    </session-factory>
+</hibernate-configuration>

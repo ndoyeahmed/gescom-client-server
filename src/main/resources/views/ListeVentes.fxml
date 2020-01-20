@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="550.0" prefWidth="1180.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mthiam.gescom.controllers.ListeVenteController">
+   <top>
+      <ToolBar prefHeight="60.0" prefWidth="200.0" styleClass="font-color" BorderPane.alignment="CENTER">
+         <items>
+            <Label styleClass="text-title-white" text="LISTE DES VENTES" />
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <BorderPane prefHeight="490.0" prefWidth="1180.0" BorderPane.alignment="CENTER">
+         <center>
+            <TableView fx:id="tableVentes" prefHeight="363.0" prefWidth="1002.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="num_bs_column" prefWidth="176.0" resizable="false" sortable="false" text="N° Vente" />
+                <TableColumn fx:id="date_column" prefWidth="161.3333740234375" resizable="false" sortable="false" text="Date" />
+                  <TableColumn fx:id="client_column" prefWidth="210.33331298828125" resizable="false" sortable="false" text="Client" />
+                  <TableColumn fx:id="montant_total_column" prefWidth="159.66668701171875" resizable="false" sortable="false" text="Montant total" />
+                  <TableColumn fx:id="montant_verse_column" prefWidth="159.33331298828125" resizable="false" sortable="false" text="Montant versé" />
+                  <TableColumn fx:id="montant_restant_column" prefWidth="153.66656494140625" resizable="false" sortable="false" text="Montant restant" />
+                  <TableColumn fx:id="etat_column" prefWidth="77.66650390625" text="Etat" />
+                  <TableColumn fx:id="details_column" minWidth="0.0" prefWidth="76.33349609375" resizable="false" sortable="false" text="Détails" />
+              </columns>
+            </TableView>
+         </center>
+         <top>
+            <Pane prefHeight="72.0" prefWidth="1180.0" styleClass="pane" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="62.0" layoutY="-18.0" prefHeight="39.0" prefWidth="156.0" styleClass="label-sur-pane" text="RECHERCHE">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="31.0" layoutY="24.0" prefHeight="42.0" prefWidth="1134.0">
+                     <children>
+                        <Label text="Date">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <DatePicker fx:id="date_Dpk" editable="false">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                        <Label layoutX="427.0" layoutY="23.0" text="Client">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fournisseur_Tfd" onKeyReleased="#filterByFournisseur">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="exportVentesBtn" mnemonicParsing="false" onAction="#exportVentesList" prefHeight="37.0" prefWidth="144.0" styleClass="content-area-circle-btns" text="EXPORTER" underline="true">
+                           <graphic>
+                              <FontAwesomeIcon glyphStyleClass="" iconName="UPLOAD" size="2em" styleClass="content-area-circle-btns-icon" />
+                           </graphic>
+                           <tooltip>
+                              <Tooltip text="Exporter vers excel">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>

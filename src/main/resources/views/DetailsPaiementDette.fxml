@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="331.0" prefWidth="528.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mthiam.gescom.controllers.DetailsPaiementDetteController">
+   <top>
+      <ToolBar prefHeight="60.0" prefWidth="200.0" styleClass="font-color" BorderPane.alignment="CENTER">
+         <items>
+            <Label fx:id="title_Lbl" styleClass="text-title-white" text="Détails paiement" />
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <TableView fx:id="tabledetailsPaieFournisseur" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="numero_column" editable="false" prefWidth="145.0" resizable="false" text="Numero paiement" />
+          <TableColumn fx:id="date_column" editable="false" prefWidth="205.66668701171875" resizable="false" text="Date paiement" />
+            <TableColumn fx:id="montant_column" editable="false" prefWidth="177.33331298828125" resizable="false" text="Montant" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

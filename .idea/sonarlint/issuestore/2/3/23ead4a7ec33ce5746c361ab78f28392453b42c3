@@ -1,0 +1,16 @@
+
+usquid:S1192*"^Define a constant instead of duplicating this literal "GESCOM en cours de dÃ©marrage" 6 times.(é„ÈÍ
+Bsquid:S1444"+Make this "public static stage" field final(êöæ©
+T
+squid:S106@"9Replace this use of System.out or System.err by a logger.(Æ±Ó¾ÿÿÿÿÿ
+|squid:S1192%"eDefine a constant instead of duplicating this literal "VÃ©rification de la base de donnÃ©es" 5 times.(³êÕ
+Gsquid:S1444"1Make this "public static chargements" field final(é‘—n
+"squid:ClassVariableVisibilityCheck"QMake stage a static final constant or non-public and provide accessors if needed.(êöæ©
+Qsquid:S1191"5Use classes from the Java API instead of Sun classes.(¤¸‡ˆúÿÿÿÿ
+„"squid:ClassVariableVisibilityCheck"WMake chargements a static final constant or non-public and provide accessors if needed.(é‘—n
+3squid:S2386"Make this member "protected".(é‘—n
+bsquid:CommentedOutCodeLineX"<This block of commented-out lines of code should be removed.(õ‹İÌ
+bsquid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(õ‹İÌ
+„squid:S1192U"hDefine a constant instead of duplicating this literal "org/kordamp/bootstrapfx/bootstrapfx.css" 3 times.(¤Å´ùÿÿÿÿ
+bsquid:CommentedOutCodeLineq"<This block of commented-out lines of code should be removed.(õ‹İÌ
+bsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(éäÓô

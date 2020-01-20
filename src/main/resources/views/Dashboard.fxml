@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="550.0" prefWidth="1180.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mthiam.gescom.controllers.DashbordController">
+   <top>
+      <ToolBar prefHeight="60.0" prefWidth="200.0" styleClass="font-color" BorderPane.alignment="CENTER">
+         <items>
+            <Label styleClass="text-title-black" text="Tableau de bord" />
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <ScrollPane prefHeight="800.0" prefWidth="1180.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox alignment="TOP_CENTER" prefHeight="800.0" prefWidth="1160.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="109.0" prefWidth="1180.0">
+                     <children>
+                        <Pane prefHeight="100.0" prefWidth="184.0" styleClass="pane">
+                           <children>
+                              <Label alignment="CENTER" layoutX="6.0" layoutY="1.0" prefHeight="27.0" prefWidth="172.0" text="Articles en stock" textFill="#0747a6">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="71.0" fitWidth="72.0" layoutX="57.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/stockIcon.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="nb_articles" alignment="CENTER" layoutX="12.0" layoutY="123.0" prefHeight="44.0" prefWidth="161.0" styleClass="label-sur-pane" text="110000" textFill="#009d3d">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="163.0" prefWidth="184.0" styleClass="pane">
+                           <children>
+                              <Label alignment="CENTER" layoutX="6.0" layoutY="1.0" prefHeight="27.0" prefWidth="172.0" text="Famille articles" textFill="#0747a6">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="63.0" fitWidth="68.0" layoutX="61.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/familleProduit.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="nb_categorie" alignment="CENTER" layoutX="12.0" layoutY="123.0" prefHeight="44.0" prefWidth="161.0" styleClass="label-sur-pane" text="110000" textFill="#009d3d">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </Pane>
+                        <Pane layoutX="194.0" layoutY="10.0" prefHeight="163.0" prefWidth="184.0" styleClass="pane">
+                           <children>
+                              <Label alignment="CENTER" layoutX="7.0" prefHeight="27.0" prefWidth="172.0" text="Clients" textFill="#0747a6">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="68.0" fitWidth="79.0" layoutX="58.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/usersIcon.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="nb_clients" alignment="CENTER" layoutX="12.0" layoutY="123.0" prefHeight="44.0" prefWidth="161.0" styleClass="label-sur-pane" text="110000" textFill="#009d3d">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </Pane>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="50.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="48.0" prefWidth="1180.0" styleClass="labe">
+                     <children>
+                        <Label text="GESCOM | Statistiques">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="1180.0">
+                     <children>
+                        <PieChart fx:id="etat_stock_Pchart" labelLineLength="30.0" prefHeight="400.0" prefWidth="1180.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

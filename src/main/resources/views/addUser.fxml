@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>-->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mthiam.gescom.controllers.AddUserController">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="600.0" styleClass="font-color" BorderPane.alignment="CENTER">
+         <items>
+            <Label styleClass="text-title-white" text="Ajouter un utilisateur" />
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="360.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="66.0" layoutY="23.0">
+               <children>
+                  <GridPane prefHeight="277.0" prefWidth="464.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.33331298828125" minWidth="10.0" prefWidth="112.66665649414062" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="378.0000305175781" minWidth="10.0" prefWidth="351.3333435058594" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="prenom_Tfd" GridPane.columnIndex="1" />
+                        <TextField fx:id="nom_Tfd" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="login_Tfd" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label prefHeight="34.0" prefWidth="112.0" text="Prénom (*)" />
+                        <Label layoutX="10.0" layoutY="17.0" prefHeight="34.0" prefWidth="112.0" text="Nom (*)" GridPane.rowIndex="1" />
+                        <Label layoutX="10.0" layoutY="63.0" prefHeight="34.0" prefWidth="112.0" text="Nom d'utilisateur (*)" GridPane.rowIndex="2" />
+                        <Label layoutX="10.0" layoutY="109.0" prefHeight="34.0" prefWidth="112.0" text="Mot de passe (*)" GridPane.rowIndex="3" />
+                        <Label layoutX="10.0" layoutY="155.0" prefHeight="34.0" prefWidth="112.0" text="Role (*)" GridPane.rowIndex="4" />
+                        <Label layoutX="10.0" layoutY="201.0" prefHeight="34.0" prefWidth="112.0" text="Etat compte" GridPane.rowIndex="5" />
+                        <PasswordField fx:id="password_Pfd" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <ComboBox fx:id="role_Cbx" prefHeight="33.0" prefWidth="351.0" styleClass="combo-box" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <children>
+                              <RadioButton fx:id="actif_Rbt" mnemonicParsing="false" text="Actif">
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="statusCompte" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="inactif_Rbt" mnemonicParsing="false" selected="true" text="Inactif" toggleGroup="$statusCompte" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <HBox alignment="CENTER" prefHeight="48.0" prefWidth="467.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#saveUser" prefHeight="30.0" prefWidth="146.0" styleClass="content-area-circle-btns" text="ENREGISTRER">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <graphic>
+<!--                              <FontAwesomeIcon iconName="SAVE" size="2em" styleClass="content-area-circle-btns-icon" />-->
+                           </graphic>
+                        </Button>
+                        <Button layoutX="218.0" layoutY="22.0" mnemonicParsing="false" onAction="#closePopup" prefHeight="30.0" prefWidth="146.0" styleClass="content-area-circle-btns" text="FERMER">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <graphic>
+<!--                              <FontAwesomeIcon iconName="CLOSE" size="2em" styleClass="content-area-circle-btns-icon" />-->
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

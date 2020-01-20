@@ -1,0 +1,74 @@
+
+tsquid:S00116C"\Rename this field "liste_clients_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê›æ
+osquid:S00117ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+Lsquid:S1611"/Remove the parentheses around the "e" parameter(¹ë±‡ùÿÿÿÿ
+nsquid:CommentedOutCodeLinew"<This block of commented-out lines of code should be removed.(ÑßçÎıÿÿÿÿ8ÂÛøÀò-
+wsquid:S00116."ZRename this field "stockAlerte_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑÃäüÿÿÿÿ
+osquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+osquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+@squid:S1148Ö"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148ª"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+osquid:CommentedOutCodeLineƒ"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8ÂÛøÀò-
+;squid:S1148ã"#Use a logger to log this exception.(Ç’Çê
+Gsquid:S1611Ï"/Remove the parentheses around the "e" parameter(æ¢¬Õ
+@squid:S1148ò"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Gsquid:S1611ƒ"/Remove the parentheses around the "e" parameter(æ¢¬Õ
+@squid:S1148Æ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148ü"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148â"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+osquid:S00117’"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+ysquid:S00116="\Rename this field "nouvelleVente_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¥Œéüÿÿÿÿ
+osquid:S00117²"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+@squid:S1148ò"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+usquid:S00116O"^Rename this field "creance_fournis_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ÿ(
+nsquid:CommentedOutCodeLines"<This block of commented-out lines of code should be removed.(¬É«Åûÿÿÿÿ8ÂÛøÀò-
+vsquid:S00116U"^Rename this field "gesUtilisateurs_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•´Ò’
+@squid:S1148¢"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+xsquid:S00116I"[Rename this field "mes_factures_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œı»‚ÿÿÿÿÿ
+osquid:S00117ş"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+osquid:S00117¬"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+osquid:S00117Ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+lsquid:S00116+"TRename this field "stock_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À¿Ğ”
+@squid:S1148º"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148ô"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148·"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+|squid:S00116g"_Rename this field "parametrage_rubrique" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ù¥ªÿÿÿÿÿ
+;squid:S1148—"#Use a logger to log this exception.(Ç’Çê
+Lsquid:S1611Ü"/Remove the parentheses around the "e" parameter(¹ë±‡ùÿÿÿÿ
+@squid:S1148’"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+|squid:S00116@"_Rename this field "historiqueVentes_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çÏüÚøÿÿÿÿ
+squid:UselessImportCheck"VRemove this unused import 'com.mthiam.gescom.controllers.SignInController.loggedUser'.(½Ú¡ 8ÂÛøÀò-
+@squid:S1148Æ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+ssquid:S00116:"\Rename this field "liste_fournis_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½äñ}
+osquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+@squid:S1148¡"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148¾"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+osquid:S00117Á"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+@squid:S1148ƒ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+ksquid:S00116("SRename this field "home_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÚÎ
+wsquid:S00116^"ZRename this field "deconnexion_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËšÍüÿÿÿÿ
+ssquid:S00116L"VRename this field "creance_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆòÙùÿÿÿÿ
+rsquid:S00116d"ZRename this field "caisse_rubrique" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(† ù©
+@squid:S1148å"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+ysquid:S00116F"aRename this field "nouvelles_factures_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ãòÚ
+usquid:S00116R"XRename this field "ma_caisse_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾Õ”ˆÿÿÿÿÿ
+nsquid:S3776q"RRefactor this method to reduce its Cognitive Complexity from 79 to the 15 allowed.(ÛŒ¦…ıÿÿÿÿ
+@squid:S1148û"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+psquid:S001161"YRename this field "inventaire_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö½·m
+usquid:S001164"]Rename this field "nouvelleEntree_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”Èøğ
+xsquid:S001167"`Rename this field "historiqueEntrees_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÓ®
+osquid:S00117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+@squid:S1148¨"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148Ö"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+osquid:S00117Ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+osquid:S00117Ş"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+usquid:S00116["]Rename this field "entrepriseInfo_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş¨ñ«
+osquid:S00117à"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+@squid:S1148’"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+;squid:S1148Š"#Use a logger to log this exception.(Ç’Çê
+osquid:S00117£"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åşÚ¶ıÿÿÿÿ
+;squid:S1148Ö"#Use a logger to log this exception.(Ç’Çê
+@squid:S1148±"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+csquid:S1192Å"FDefine a constant instead of duplicating this literal "file:" 5 times.(Í„êıÿÿÿÿ
+xsquid:S00116X"[Rename this field "gesCategorie_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬¤ïºøÿÿÿÿ
+@squid:S1148È"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

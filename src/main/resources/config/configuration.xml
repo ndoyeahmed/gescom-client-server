@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <app>
+        <appname>NDIAYE KHAITA SERVICE</appname>
+        <ninea>373744646466</ninea>
+        <rc>172727336363</rc>
+        <adresse>Mbour ecole 3 </adresse>
+        <telephone_fixe>338768787</telephone_fixe>
+        <telephone_mobile>774661207</telephone_mobile>
+        <email>ndiayekhaita@gmail.com</email>
+        <web>www.ndiayekhaita.com</web>
+        <logo>C:\Users\MISTA\Pictures\Camera Roll\venom.jpg</logo>
+        <directory>D:\cours\PERSONAL_PROJECT\gestion-stock\gescom-client-server</directory>
+        <status_param>0</status_param>
+        <status_admin>1</status_admin>
+    </app>
+
+
+</configuration>
